@@ -1,0 +1,11 @@
+tunnel: TUNNEL_ID_AQUI
+credentials-file: /etc/cloudflared/TUNNEL_ID_AQUI.json
+
+ingress:
+  - hostname: n8n.seusdominio.com
+    service: http://n8n:5678
+
+  - hostname: waha.seusdominio.com
+    service: http://waha:3000
+
+  - service: http_status:404
