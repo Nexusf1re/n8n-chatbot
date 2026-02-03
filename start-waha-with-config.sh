@@ -10,7 +10,7 @@ BASE_WEBHOOK_URL="${WAHA_WEBHOOK_URL:-}"
 if [ -z "$BASE_WEBHOOK_URL" ] && [ -n "${N8N_WEBHOOK_URL:-}" ]; then
   # Remove barra final, se existir, e acrescenta o path padrão do n8n
   BASE_URL_TRIMMED=${N8N_WEBHOOK_URL%/}
-  BASE_WEBHOOK_URL="$BASE_URL_TRIMMED/webhook/webhook"
+  BASE_WEBHOOK_URL="$BASE_URL_TRIMMED/webhook/waha"
 fi
 
 WEBHOOK_URL="$BASE_WEBHOOK_URL"

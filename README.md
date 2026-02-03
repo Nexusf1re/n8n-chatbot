@@ -13,7 +13,7 @@ Hospeda n8n, WAHA (WhatsApp HTTP API), Redis e o serviço Whisper ASR. O script 
    - `WAHA_USER` / `WAHA_PASS`: credenciais do dashboard e API (ou defina `WAHA_API_KEY` separado se quiser uma key distinta).
    - `WAHA_ENGINE`: NOWEB, WEBJS ou GOWS.
    - `WAHA_SESSION_NAME`: nome da sessão criada/iniciada.
-   - `WAHA_WEBHOOK_URL`: URL completa do webhook; se vazio, cai para `N8N_WEBHOOK_URL` + `/webhook/webhook`.
+   - `WAHA_WEBHOOK_URL`: URL completa do webhook; se vazio, cai para `N8N_WEBHOOK_URL` + `/webhook/waha`.
    - `WAHA_WEBHOOK_RETRY_ATTEMPTS` / `WAHA_WEBHOOK_RETRY_DELAY_SECONDS`: tentativas e delay do webhook.
    - `N8N_WEBHOOK_URL` e `N8N_HOST`: host público que o n8n usa para gerar webhooks.
    - `ASR_MODEL`: tiny, base ou small (trade-off velocidade vs. precisão).
