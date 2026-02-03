@@ -44,8 +44,7 @@ PAYLOAD=$(cat <<EOF
         "delaySeconds": ${WEBHOOK_RETRY_DELAY_SECONDS}
       }
     }],
-    "ignore": {"status": true, "groups": true, "channels": true, "broadcast": true},
-    "noweb": {"markOnline": true}
+    "ignore": {"status": true, "groups": true, "channels": true, "broadcast": true}
   }
 }
 EOF
