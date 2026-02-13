@@ -1,11 +1,4 @@
 services:
-#  cloudflared:
-#    image: cloudflare/cloudflared:latest
-#    restart: unless-stopped
-#    command: tunnel run
-#    volumes:
-#      - ./cloudflared:/etc/cloudflared
-
   redis:
     image: redis:latest
     command: redis-server --requirepass ${REDIS_PASSWORD}
