@@ -22,7 +22,7 @@ services:
     volumes:
       - waha_media:/app/.media
       - waha_sessions:/app/.sessions
-      - ./start-waha-with-config.sh:/start-waha-with-config.sh
+      - /opt/projects/n8n-chatbot/start-waha-with-config.sh:/start-waha-with-config.sh
     ports:
       - "3000:3000"
     command: /start-waha-with-config.sh
