@@ -1,5 +1,5 @@
 services:
- redis:
+  redis:
    image: redis:latest
    command: redis-server --requirepass ${REDIS_PASSWORD}
    restart: unless-stopped
