@@ -1,8 +1,8 @@
 services:
-#  redis:
-#    image: redis:latest
-#    command: redis-server --requirepass ${REDIS_PASSWORD}
-#    restart: unless-stopped
+ redis:
+   image: redis:latest
+   command: redis-server --requirepass ${REDIS_PASSWORD}
+   restart: unless-stopped
 
   waha:
     image: devlikeapro/waha:latest
