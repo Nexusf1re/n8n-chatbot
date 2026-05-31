@@ -38,7 +38,10 @@ PAYLOAD=$(cat <<EOF
   "config": {
     "webhooks": [{
       "url": "${WEBHOOK_URL}",
-      "events": ["${WEBHOOK_EVENTS}"],
+      "events": [
+        "message",
+        "poll.vote"
+      ],
       "retries": {
         "attempts": ${WEBHOOK_RETRY_ATTEMPTS},
         "delaySeconds": ${WEBHOOK_RETRY_DELAY_SECONDS}
